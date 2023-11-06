@@ -13,13 +13,22 @@ interface Props {
 }
 
 function CardChar({image, name, status, location}: Props) {
+
+  const trimText = (text: string, maxLength: number) => {
+    if(text.length <= maxLength ) {
+      return text
+    }else{
+      return text.slice(0, maxLength) + "..."
+    }
+  }
+  const locationShort = trimText(location, 18)
   return (
     <CardContainer>
       <ImageCard src={image} alt="image" />
       <TextCard>{name}</TextCard>
       <TextBody>
         <TextCard>{status}</TextCard>
-        <TextCard>{location}</TextCard>
+        <TextCard>{locationShort}</TextCard>
       </TextBody>
     </CardContainer>
   );
