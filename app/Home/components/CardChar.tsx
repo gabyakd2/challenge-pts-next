@@ -3,6 +3,7 @@ import {
   ImageCard,
   TextBody,
   TextCard,
+  TextTitle,
 } from "@/styledComponents/StyledComponents";
 
 interface Props {
@@ -25,7 +26,7 @@ function CardChar({image, name, status, location}: Props) {
   return (
     <CardContainer>
       <ImageCard src={image} alt="image" />
-      <TextCard>{name}</TextCard>
+      <TextTitle>{name}</TextTitle>
       <TextBody>
         <TextCard>{status}</TextCard>
         <TextCard aria-label={location}>{locationShort}</TextCard>
