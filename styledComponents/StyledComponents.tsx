@@ -6,7 +6,6 @@ export const NavbarContainer = styled.nav`
   align-items: center;
   background-color: #333;
   color: white;
-  padding: 10px;
 
   @media (max-width: 768px) {
     // flex-direction: column;
@@ -74,6 +73,7 @@ export const CardContainer = styled.div`
   text-align: center;
   display: flex;
   flex-direction: column;
+  background: #3C3E44;
   // padding: 16px;
 `;
 
@@ -89,6 +89,11 @@ export const TextBody = styled.div`
   margin-bottom: 10px;
 `;
 
+export const TextTitle = styled.p`
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+`;
 export const TextCard = styled.p`
   margin: 10px 0;
   font-size: 16px;

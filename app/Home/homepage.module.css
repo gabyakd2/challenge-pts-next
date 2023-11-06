@@ -1,0 +1,17 @@
+.titleHome {
+  font-size: 70px;
+  margin-left: 18%;
+  margin-top: 15%;
+  margin-bottom: 10%;
+
+  @media (max-width: 768px) {
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    padding-top: 30%;
+    padding-bottom: 3%;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
