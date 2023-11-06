@@ -3,6 +3,7 @@ import CardChar from "./CardChar";
 import { ListCardContainer, ParentContainer } from "@/styledComponents/StyledComponents";
 import { IDataCharacter } from "@/interfaces/ICharacter";
 import useFetchCharacters from "@/app/hooks/useFetchChar";
+import styles from "./charlist.module.css"
 
 function CharList() {
   const { dataCharacter } = useFetchCharacters();
