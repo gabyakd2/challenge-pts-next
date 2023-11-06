@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+//START NAVBAR
 export const NavbarContainer = styled.nav`
   display: flex;
   justify-content: space-between;
@@ -38,7 +38,9 @@ export const ButtonNav = styled.p`
   margin-left: 10px;
   cursor: pointer;
 `;
+//END NAVBAR
 
+//START CARDLIST Y CARDS
 export const ParentContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -87,4 +89,10 @@ export const TextBody = styled.div`
 export const TextCard = styled.p`
   margin: 10px 0;
   font-size: 16px;
+`;
+//END CARDLIST Y CARDS
+
+//START BUTTON LOADMORE
+export const Button = styled.button`
+  
 `;
