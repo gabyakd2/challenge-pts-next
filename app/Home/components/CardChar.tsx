@@ -28,7 +28,7 @@ function CardChar({image, name, status, location}: Props) {
       <TextCard>{name}</TextCard>
       <TextBody>
         <TextCard>{status}</TextCard>
-        <TextCard>{locationShort}</TextCard>
+        <TextCard aria-label={location}>{locationShort}</TextCard>
       </TextBody>
     </CardContainer>
   );
