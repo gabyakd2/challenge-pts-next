@@ -52,6 +52,12 @@ export const ListCardContainer = styled.div`
     1fr
   ); // Aquí definimos 3 columnas con el mismo ancho.
   gap: 20px; 
+  @media (max-width: 960px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 export const CardContainer = styled.div`
