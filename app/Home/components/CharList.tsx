@@ -1,17 +1,11 @@
 "use client";
 import CardChar from "./CardChar";
-import {
-  ListCardContainer,
-  ParentContainer,
-} from "@/styledComponents/StyledComponents";
+import { ListCardContainer, ParentContainer } from "@/styledComponents/StyledComponents";
 import { IDataCharacter } from "@/interfaces/ICharacter";
 import useFetchCharacters from "@/app/hooks/useFetchChar";
 
 function CharList() {
-  const { dataCharacter, pageNumber, setPageNumber } = useFetchCharacters();
-  const handleNextPage = () => {
-    setPageNumber(pageNumber + 1);
-  };
+  const { dataCharacter } = useFetchCharacters();
   return (
     <div>
       <ParentContainer>
@@ -32,7 +26,6 @@ function CharList() {
           )}
         </ListCardContainer>
       </ParentContainer>
-      <button onClick={handleNextPage}>load more</button>
     </div>
   );
 }
