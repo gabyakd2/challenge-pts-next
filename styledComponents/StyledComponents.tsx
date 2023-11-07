@@ -74,7 +74,6 @@ export const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
   background: #3C3E44;
-  // padding: 16px;
 `;
 
 export const ImageCard = styled.img`
@@ -90,7 +89,7 @@ export const TextBody = styled.div`
 `;
 
 export const TextTitle = styled.p`
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
   margin: 10px 0;
 `;
